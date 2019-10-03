@@ -113,9 +113,9 @@ background-size:cover;
   font-size: 20px;
   text-align: left;
   position: relative;
-  left: 50px;
-  top: 600px;
-  width: 1400px;
+  left: 1060px;
+  top: 1760px;
+  width: 800px;
   line-height: 1.6;
   letter-spacing: 1px;
   /*animation: drift 10000ms linear infinite;*/
@@ -125,19 +125,19 @@ background-size:cover;
  /* animation-delay: 1000ms !important;*/
 }
 
-#subheading2 { 
+/*#subheading2 { 
   color:#FDFFE3;
   font-family: ocr-a-std, monospace;
   font-style: normal;
   font-size: 20px;
-  text-align: right;
+  text-align: left;
   position: relative;
   left: 800px;
   top: 1760px;
   width: 800px;
   line-height: 1.6;
   letter-spacing: 1px;
-}
+}*/
 
 #subheading3 {
   color:#FDFFE3;
@@ -158,9 +158,9 @@ background-size:cover;
   font-family: ocr-a-std, monospace;
   font-style: normal;
   font-size: 20px;
-  text-align: right;
+  text-align: left;
   position: relative;
-  left: 800px;
+  left: 1060px;
   top: 500px;
   width: 800px;
   line-height: 1.6;
@@ -191,7 +191,7 @@ background-size:cover;
   font-size: 20px;
   text-align: left;
   position: relative;
-  left: 50px;
+  left: 1060px;
   top: 4900px;
   width: 800px;
   line-height: 1.6;
@@ -210,12 +210,8 @@ background-size:cover;
   width: 800px;
   line-height: 1.6;
   letter-spacing: 1px;
-  opacity: .2;
-  transition: opacity .8s;
-}
-
-#subheading7 :hover {
-    opacity: 1;
+  opacity: 1;
+   animation: fade 100s linear infinite;
 }
 
 #subheading4 {
@@ -223,14 +219,29 @@ background-size:cover;
   font-family: ocr-a-std, monospace;
   font-style: normal;
   font-size: 20px;
-  text-align: right;
+  text-align: left;
   position: relative;
   left: 800px;
   top: 3100px;
-  width: 800px;
+  width:800px;
   line-height: 1.6;
   letter-spacing: 1px;
 }
+
+#subheading14 {
+  color:#FDFFE3;
+  font-family: ocr-a-std, monospace;
+  font-style: normal;
+  font-size: 20px;
+  text-align: left;
+  position: relative;
+  left: 800px;
+  top: 3150px;
+  width:800px;
+  line-height: 1.6;
+  letter-spacing: 1px;
+}
+
 
 #subheading8 {
   color:#FDFFE3;
@@ -255,23 +266,4 @@ background-size:cover;
   }
   100% {
     transform:rotate(360deg) translateX(20px) rotate(-360deg);
-  }
-
-
-@keyframes shift {
-  0% {
-    transform: translateY(-10px) translateX(20px);
-  }
-  25% {
-    transform: translateY(10px) translateX(-20px) ;
-  }
-  50% {
-    transform:translateY(-10px) translateX(20px) ;
-  }
-  75% {
-    transform: translateY(10px) translateX(-20px) ;
-  }
-  100% {
-    transform: translateY(-10px) translateX(20px) ;
-  
 }
