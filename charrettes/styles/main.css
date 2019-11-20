@@ -1,0 +1,860 @@
+/* reset padding and margins */
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: helvetica, arial, sans-serif;
+}
+
+/* container */
+
+.container {
+     display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-gap: 10px;
+    padding: 5px;
+}
+/* items */
+
+.item {
+  height: 300px;
+  width: 300px;
+  background: black;
+  color: white;
+  margin: 10px auto;
+  padding: 10px;
+  box-sizing: border-box;
+  transition: all 500ms ease; 
+  cursor: pointer;
+}
+
+/* example element 1 */
+#element-1{
+background: #4D1925}
+#element-1:hover {
+  transform: pulse(10s) ;
+  opacity: .1;
+}
+#element-1:active {
+  background: #4D1925;
+  opacity: 1;
+}
+
+/* example element 2 */
+#element-2{
+background: #63213F
+}
+#element-2::after {
+  color: white;
+}
+#element-2:hover::after {
+  content: 'aubergine';
+  color: white;
+  font-size:40px;
+  position: relative;
+  left: 50px;
+  top:110px;
+  opacity:1;
+}
+
+#element-2:active {
+  transform:scale(1.5,1.5);
+/*mix-blend-mode: lighten;*/
+}
+/* example element 3 is changed only via js */
+#element-3{
+background: #953262;
+}
+
+#element-3:hover{
+    border-radius: 200px;
+}
+
+#element-3:active{
+
+}
+/* example element 4 */
+#element-4{
+background: #B43C86;
+}
+#element-4:hover{
+ transform:skew(20deg,20deg);
+  transition-duration: 3s;
+}
+#element-4:active{
+ transform:skew(-20deg,-20deg);
+  transition-duration: 3s;
+}
+
+/* example element 5 */
+#element-5{
+background: #CC66B2;
+transition: transform 1s;
+transition: all 2s;
+transition-property: : ease-in-out;
+}
+#element-5:hover{
+ transform: rotate(360deg);
+  border-radius: 2% 100%;
+}
+#element-5:active{
+ border-radius: 50%;
+}
+
+/* example element 6 */
+#element-6{
+  background:#E0A3D4;
+  transition: none; 
+  opacity:1; 
+}
+#element-6::after {
+  color: white;
+}
+#element-6:hover::after{
+content: 'LIGHTS ON!';
+font-family: Didot, serif;
+font-size:30px;
+position:relative;
+left:15px;
+top:90px;
+
+}
+#element-6:hover{
+  border-width: 30px;
+  border-style:dotted;
+  border-color:white;
+}
+
+/* example element 7 */
+#element-7{
+background: #E9BEE6;
+}
+
+#element-7:hover {
+transform: scale(1.5); 
+opacity: 0;
+}
+
+/* example element 8 */
+#element-8{
+background: #F2D9F0;
+}
+
+#element-8:hover {
+transform: translate(50px,50px);
+}
+#element-8:active{
+transform: translate(-50px,-50px);
+}
+
+/* example element 9 */
+#element-9{
+background: #E2A7BD;
+}
+
+#element-9:hover{
+  opacity:0;
+}
+.bounce-in-fwd:active {
+  -webkit-animation: bounce-in-fwd 1.1s both;
+          animation: bounce-in-fwd 1.1s both;
+}
+
+@-webkit-keyframes bounce-in-fwd {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  38% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  55% {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  72% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  81% {
+    -webkit-transform: scale(0.84);
+            transform: scale(0.84);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  89% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  95% {
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+}
+@keyframes bounce-in-fwd {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  38% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  55% {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  72% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  81% {
+    -webkit-transform: scale(0.84);
+            transform: scale(0.84);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  89% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  95% {
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+}
+
+/* example element 10 */
+#element-10{
+background: #D685A9;
+content: 'Hello!';
+}
+#element-10::before {
+  content: 'Hello!';
+  font-size: 60px;
+  position:relative;
+  left:60px;
+  top:100px;
+}
+#element-10:hover::before {
+  content:'Hello!';
+  opacity:0;
+}
+
+#element-10:hover::after {
+  content:'Goodbye!';
+  opacity:1;
+  font-size:60px;
+  position:relative;
+  left:10px;
+  top:35px;
+}
+
+/* example element 11 */
+#element-11{
+background: #DB9497;
+}
+#element-11:hover{
+filter: grayscale(80%) blur(1px);
+}
+#element-11:active{
+filter: grayscale(80%) blur(10px);
+border-radius:10% 10% 80% 80%;
+}
+
+/* example element 12 */
+#element-12{
+background: #CC6675;
+}
+#element-12:hover{
+background: #CC6675;
+filter: blur(90px);
+opacity: .1;
+}
+
+/* example element 13 */
+#element-13{
+  background: #B43C56;
+border-style: solid;
+border-width: 100px;
+border-color: #CC6675 ;
+}
+#element-13:hover{
+background: #B43C56;
+border-style: dashed;
+border-width: 10px;
+border-color: #CC6675 ;
+}
+
+/* example element 14 */
+#element-14{
+background: #AC3943;
+}
+#element-14:hover{
+background: #AC3943;
+border-radius: 100% 100% 100% 0%;
+}
+#element-14:active{
+background: #AC3943;
+border-radius: 100% 100% 100% 0%;
+transform: scale(20,20);
+}
+
+/*example element 15*/
+#element-15{
+background: #953247;
+}
+#element-15:hover{
+background: #953247;
+box-shadow: 10px 10px 10px grey;
+}
+#element-15:active{
+background: #953247;
+box-shadow: 40px 40px 10px grey;
+}
+
+/*example element 16*/
+#element-16{
+background: #7A293A;
+}
+#element-16:hover{
+background: #45194D;
+transition-duration: 1s;
+}
+#element-16:active{
+background: #45194D;
+transform: scale(.1,.1);
+}
+
+/*example element 17*/
+#element-17{
+background: #4D1933;
+}
+#element-17:hover{
+  border-radius: 90% 10% 90% 10%;
+transform:skew(-10deg);
+transition-duration: 1s;
+}
+#element-17:active{
+background:white;
+}
+
+/*example element 18*/
+#element-18{
+background: #3B1641;
+}
+#element-18:hover{
+background-image: url("https://image.shutterstock.com/image-illustration/abstract-dark-pink-background-fabric-260nw-124706740.jpg");
+background-size:500px;
+filter:blur(40px);
+}
+#element-18:active{
+background-image: url("https://image.shutterstock.com/image-illustration/abstract-dark-pink-background-fabric-260nw-124706740.jpg");
+filter:blur(0px);
+}
+
+/*example element 19*/
+#element-19{
+background: #45194D;
+}
+#element-19:hover{
+  background-image: radial-gradient( white, #45194D, white);
+ transition: all 2s ease;
+   border-radius: 100%;
+}
+#element-19:active{
+  border-radius:0%;
+background-image: white;
+}
+/*example element 20*/
+#element-20{
+background: #3A1F5C;
+}
+#element-20:hover{
+background-image: linear-gradient( #45194D, #6AB8CD);
+transform:scale(1,14);
+}
+
+/*example element 21*/
+#element-21{
+background: #402F8E;
+}
+#element-21:hover{
+background: #402F8E;
+background-image: linear-gradient(90deg,#402F8E, #6AB8CD);
+transform:scale(8,1);
+}
+/*example element 22*/
+#element-22{
+background: #3642A1;
+}
+
+#element-22:hover{
+background: #3642A1;
+opacity:0;
+}
+
+.slide-in-blurred-top:active {
+  -webkit-animation: slide-in-blurred-top 0.5s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+          animation: slide-in-blurred-top 0.5s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+          transition:ease;
+}
+
+@-webkit-keyframes slide-in-blurred-top {
+  0% {
+    -webkit-transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+            transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+    -webkit-transform-origin: 50% 0%;
+            transform-origin: 50% 0%;
+    -webkit-filter: blur(40px);
+            filter: blur(40px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0) scaleY(1) scaleX(1);
+            transform: translateY(0) scaleY(1) scaleX(1);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-blurred-top {
+  0% {
+    -webkit-transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+            transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+    -webkit-transform-origin: 50% 0%;
+            transform-origin: 50% 0%;
+    -webkit-filter: blur(40px);
+            filter: blur(40px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0) scaleY(1) scaleX(1);
+            transform: translateY(0) scaleY(1) scaleX(1);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    opacity: 1;
+  }
+}
+
+/*example element 23*/
+#element-23{
+background: #3D62B8;
+}
+#element-23:active{
+transform:scale(.00001,.00001);
+}
+
+/*example element 24*/
+#element-24{
+background: #4F86C4;
+}
+#element-24:hover{
+background: #81D5CE;
+}
+#element-24:active{
+transform:scale(8,1) rotate(90deg);
+background-image: linear-gradient(-90deg,#4F86C4, #81D5CE);
+}
+/*example element 25*/
+#element-25{
+background: #6AB8CD;
+}
+
+#element-25:hover{
+background: #6AB8CD;
+background-image: linear-gradient(-90deg,#6AB8CD, #402F8E);
+transform:scale(8,1);
+/*example element 26*/
+}
+
+#element-26{
+background: #81D5CE;
+}
+#element-26:hover{
+background: #81D5CE;
+border-color:white;
+border-style:double;
+border-width:100px; 
+}
+
+#element-26:active{
+background: #81D5CE;
+border-color:white;
+border-style:double;
+border-width:10px; 
+}
+
+/*example element 27*/
+#element-27{
+  background: #90DAB1;
+}
+#element-27:active{
+background: #90DAB1;
+border-radius:100%;
+transform:translate(-100px,1000px);
+}
+
+/*example element 28*/
+#element-28{
+background: #B0DD98;
+}
+
+#element-28:hover{
+background-image: repeating-radial-gradient(#81D5CE,#90DAB1, #B0DD98,#DBE3AB, #E6DBB3);
+}
+#element-28:active{
+background-image: repeating-radial-gradient(#81D5CE,#90DAB1, #B0DD98,#DBE3AB, #E6DBB3);
+transform:scale(7,7);
+}
+/*example element 29*/
+#element-29{
+background: #DBE3AB;
+}
+#element-29:hover{
+background: #DBE3AB;
+filter:blur(30px);
+}
+#element-29:active{
+background: #DBE3AB;
+background-image: url("https://upload.wikimedia.org/wikipedia/en/thumb/6/62/Kermit_the_Frog.jpg/220px-Kermit_the_Frog.jpg");
+background-size: 300px;
+filter:blur(0px);
+}
+
+/*example element 30*/
+#element-30{
+background: #E6DBB3;
+}
+#element-30:active{
+border-radius: 70% 10%;
+}
+
+/*example element 31*/
+#element-31{
+background: #DEC09C;
+}
+#element-31:hover{
+background: #DEC09C;
+transform:skew(10deg);
+}
+#element-31:active{
+background: #DEC09C;
+transform:skew(-10deg);
+opacity:.5;
+}
+
+/*example element 32*/
+#element-32{
+background: #D7B488;
+}
+#element-32:active{
+background: #D7B488;
+border-width: 40px;
+border-style: dashed;
+border-color: white;
+}
+
+/*example element 33*/
+#element-33{
+background: #D1A675;
+}
+#element-33:hover{
+background: #D1A675;
+border-radius: 50%;
+box-shadow: 40px 40px 10px #DEC09C;
+}
+#element-33:active{
+background: #D1A675;
+border-radius: 10%;
+}
+
+/*example element 34*/
+#element-34{
+background: #CD926A;
+}
+#element-34:hover{
+  transform:rotate(90deg);
+  border-radius: 100%;
+}
+#element-34:active{
+filter:blur(100px);
+}
+
+/*example element 35*/
+#element-35{
+background: #CB8062;
+}
+
+#element-35:hover{
+border-style:dotted;
+ border-width: 8px;
+border-color:white;
+}
+
+#element-35:active{
+border-radius: 100%;
+transform:scale(1.5,1.5);
+border-style:dotted;
+ border-width: 8px;
+border-color:white;
+}
+
+/*example element 36*/
+#element-36{
+background: #C47E4F;
+}
+#element-36:Active{
+background: #C47E4F;
+transform:scale(.5,.5);
+border-radius: 20% 40%;
+}
+#element-36:hover{
+background: #7A5329;
+}
+
+/*example element 37*/
+#element-37{
+background: #956732;
+}
+
+#element-37:hover{
+background: #956732;
+filter: drop-shadow(16px 16px 20px red) invert(75%);
+border-radius: 40% 10%;
+}
+
+/*example element 38*/
+#element-38{
+background: #7A5329;
+}
+#element-38:hover{
+background: #7A5329;
+transform:scale(0,1);
+opacity:.1;
+}
+
+/*example element 39*/
+#element-39{
+background: #6F4325
+}
+#element-39:hover{
+background-image: url("https://ellaschocolates.com/wp-content/uploads/2014/04/Chocalate-Bar.jpg");
+background-size: 1400px;
+background-position: center 
+}#element-39:active{
+background-image: url("https://ellaschocolates.com/wp-content/uploads/2014/04/Chocalate-Bar.jpg");
+background-size: 2800px;
+background-position: right; 
+}
+/*example element 40*/
+#element-40{
+background:#7E4F2A;
+}
+#element-40:hover{
+background-image:url("https://static.tvtropes.org/pmwiki/pub/images/chocolate_with_nuts_176.jpg");
+background-size: 400px;
+background-position: inherit;
+animation: shake 0.5s;
+animation-iteration-count: infinite;
+}
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+/*example element 41*/
+#element-41{
+background: #8A542E;
+}
+#element-41:hover{
+ background:white;
+background-image:url("https://upload.wikimedia.org/wikipedia/en/thumb/b/bc/Chocolate_with_Nuts_Spongebob.jpg/200px-Chocolate_with_Nuts_Spongebob.jpg");
+ background-repeat:no-repeat;
+ background-position: center;
+ left:40px;
+filter:blur(10px);
+}
+#element-41:active{
+   background:white;
+background-image:url("https://upload.wikimedia.org/wikipedia/en/thumb/b/bc/Chocolate_with_Nuts_Spongebob.jpg/200px-Chocolate_with_Nuts_Spongebob.jpg");
+ background-repeat:no-repeat;
+ background-position: center;
+ left:40px;
+filter:blur(0px);
+}
+
+/*example element 42*/
+#element-42{
+background: #995733;
+}
+#element-42:active{
+background: #995733;
+border-radius: 20% 90%;
+background-image:url("https://a.espncdn.com/combiner/i?img=/redesign/assets/img/icons/ESPN-icon-football-college.png&w=288&h=288&transparent=true");
+ background-repeat:no-repeat;
+ background-position: center;
+ left:40px;
+}
+
+#element-42:hover{
+border-radius: 90% 10%;
+}
+/*example element 43*/
+#element-43{
+background: #A85C38;
+}
+
+#element-43:active{
+background: #A85C38;
+border-style: double;
+border-radius:100%;
+border-color:white;
+border-width:50px;
+}
+
+#element-43:hover{
+background: sienna;
+opacity:.5;
+}
+
+/*example element 44*/
+#element-44{
+background: #B4623C;
+}
+#element-44:hover{
+opacity: 0;
+}
+#element-44:active{
+opacity: 1;
+transform:translate(10px,40px);
+}
+/*example element 45*/
+#element-45{
+background: #C4744F;
+}
+#element-45:hover{
+opacity: 0;
+transform:translate(30px,0px);
+}
+#element-45:active{
+opacity: 1;
+transform:translate(-30px,-0px);
+}
+
+/*example element 46*/
+#element-46{
+background: #C77A57;
+}
+#element-46:hover{
+opacity: 0;
+border-width:40px;
+border-style:dashed;
+border-color:white;
+}
+#element-46:active{
+opacity: 1;
+border-width:80px;
+border-style:dashed;
+border-color:white;
+}
+/*example element 47*/
+#element-47{
+background: #C8835B;
+}
+#element-47:Active{
+background: #B4623C;
+background-image: url("https://vignette.wikia.nocookie.net/spongebob/images/c/c2/I_Had_an_Accident_21.jpg/revision/latest?cb=20150124035007");
+border-radius: 100%;
+ background-position: center;
+top:200px;
+left:10px;
+transform: scale(.5,.5);
+}
+/*example element 48*/
+#element-48{
+background: #C8885B;
+}
+#element-48:hover{
+filter:blur(40px);
+}
+#element-48:active{
+filter:blur(10px);
+transform:scale(1,0);
+}
+
+/*example element 49*/
+#element-49{
+background: #CF946E;
+}
+#element-49:hover{
+opacity: 0;
+}
+#element-49:active{
+opacity: 1;
+filter:grayscale(40);
+transform:rotate(180deg);
+}
+
+#element-50{
+    background-color: sienna;
+}
+#element-50:active{
+transform:scale(12,12);
+}

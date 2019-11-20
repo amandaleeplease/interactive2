@@ -1,0 +1,32 @@
+#headline img {
+  width:40%;
+  position:absolute;
+ top: 15vh;
+ left: 30vw;
+}
+
+#artist img {
+  width: 20%;
+  position:absolute;
+  top: 32vh;
+ left: 39vw;
+}
+
+#house img {
+  width:50%;
+  position:absolute;
+  top: 45vh;
+ left: 24vw;
+}
+
+#click img {
+ width: 10%;
+ position: absolute;
+ top: 85vh;
+ left: 45vw;
+}
+
+body {
+background: #EBE8DB;
+ }
+

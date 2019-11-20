@@ -1,0 +1,90 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body { background: black;
+    
+}
+#desktop {
+    display: inline;
+    color: white;
+    font-size: 40px;
+}
+
+
+h1{
+    color:#F9FED7;
+    position:relative;
+    text-align:center;
+    left:-1vw;
+    top: -65vh;
+    font-family: Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia" ;
+}
+img{
+    width:100%;
+height:50%
+margin-top:0px;
+position:relative;
+top:20vh;}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+#tablet,
+#mobile,
+#print {
+    display: none;
+}
+
+
+@media (min-width: 670px) and (max-width: 1024px) {
+    body { background: black;
+       
+    }
+    #tablet {
+        display: inline;
+        color: white;
+    }
+    #desktop,
+    #mobile,
+    #print 
+    {
+        display: none;
+    }
+}
+
+@media (max-width: 670px) {
+    body { background: black;
+      
+    }
+    #mobile {
+        display: inline;
+        color: black;
+    }
+    #desktop,
+    #tablet,
+    #print{
+        display: none;
+    }
+}
+
+@media print {
+    body {
+        background: black;
+    }
+    #print {
+        display: block;
+        color: black;
+    }
+    #desktop,
+    #tablet,
+    #mobile {
+        display: none;
+    }
+}

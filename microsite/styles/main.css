@@ -1,0 +1,237 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background: #8CBED9;
+  font-family: helvetica, arial, sans-serif;
+	cursor: url('https://cdn.glitch.com/397251fb-38dd-4634-b488-2daac3af279b%2Fmagnifyingglass.png?v=1571786696775') 2 2, default;
+}
+
+h1{
+font-size:100px;
+position: absolute;
+top: 38vh;
+left: 38vh;
+color: #F0EAD1;
+transition: opacity 1000ms ease-in;
+}
+
+.clicked h1 {
+  opacity:0;
+}
+
+#duck{
+ content:url('https://cdn.glitch.com/397251fb-38dd-4634-b488-2daac3af279b%2Fducky.png?v=1571792927939');
+  width:20%;
+  transition: opacity 1000ms ease-in;
+  position: absolute;
+  top: 44vh;
+  left: 65vh;
+}
+
+.clicked #duck {
+ opacity:0;
+}
+/* container */
+
+.container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-gap: 10px;
+    padding: 5px;
+  object-fit:scale-down;
+}
+/* items */
+
+.item {
+  height: 300px;
+  width: 300px;
+  background: #8CBED9;
+  color: white;
+  margin: 10px auto;
+  padding: 10px;
+  box-sizing: border-box;
+  transition: all 500ms ease; 
+  cursor: url('https://image.flaticon.com/icons/png/512/68/68213.png'), auto;
+  object-fit:scale-down;
+}
+
+/* example square 1 */
+#square-1{
+background: #8CBED9;
+content:url('https://cdn.glitch.com/397251fb-38dd-4634-b488-2daac3af279b%2Fquack1.png?v=1571792919672');
+opacity:0;
+}
+#square-1:active {
+  content:url('https://cdn.glitch.com/397251fb-38dd-4634-b488-2daac3af279b%2Fquack1.png?v=1571792919672');
+  width:100%;
+  opacity:1;
+}
+
+/* example square 2 */
+#square-2{
+background: #8CBED9;
+content:url('https://cdn.glitch.com/397251fb-38dd-4634-b488-2daac3af279b%2Fripple2.png?v=1571792921226');
+opacity:0;
+}
+#square-2:active {
+ content:url('https://cdn.glitch.com/397251fb-38dd-4634-b488-2daac3af279b%2Fripple2.png?v=1571792921226');
+  width:100%;
+  opacity:1;
+}
+
+/* example square 3 */
+#square-3{
+background: #8CBED9;
+content:url('https://cdn.glitch.com/397251fb-38dd-4634-b488-2daac3af279b%2Ffrench.png?v=1571792927645');
+opacity:0;
+}
+#square-3:active {
+  content:url('https://cdn.glitch.com/397251fb-38dd-4634-b488-2daac3af279b%2Ffrench.png?v=1571792927645');
+  width:100%;
+  opacity:1;
+}
+/* example square 4 */
+#square-4{
+background: #8CBED9;
+content:url('https://cdn.glitch.com/397251fb-38dd-4634-b488-2daac3af279b%2Fripple1.png?v=1571792921301');
+opacity:0;
+}
+#square-4:active {
+ content:url('https://cdn.glitch.com/397251fb-38dd-4634-b488-2daac3af279b%2Fripple1.png?v=1571792921301');
+  width:100%;
+  opacity:1;
+}
+/* example square 5 */
+#square-5{
+background: #8CBED9;
+content:url('https://cdn.glitch.com/397251fb-38dd-4634-b488-2daac3af279b%2Fduck1.png?v=1571792919685');
+opacity:0;
+}
+#square-5:active {
+  content:url('https://cdn.glitch.com/397251fb-38dd-4634-b488-2daac3af279b%2Fduck1.png?v=1571792919685');
+  width:100%;
+  opacity:1;
+}
+
+/* example square 6 */
+#square-6{
+background: #8CBED9;
+content:url('https://cdn.glitch.com/397251fb-38dd-4634-b488-2daac3af279b%2Fwaldo.png?v=1571792922693');
+opacity:0;
+}
+#square-6:active {
+ content:url('https://cdn.glitch.com/397251fb-38dd-4634-b488-2daac3af279b%2Fwaldo.png?v=1571792922693');
+  width:100%;
+  opacity:1;
+}
+
+/* example square 7 */
+#square-7{
+background: #8CBED9;
+content:url('https://cdn.glitch.com/397251fb-38dd-4634-b488-2daac3af279b%2Fduckprint2.png?v=1571792921661');
+opacity:0;
+}
+#square-7:active {
+ content:url('https://cdn.glitch.com/397251fb-38dd-4634-b488-2daac3af279b%2Fduckprint2.png?v=1571792921661');
+  width:100%;
+  opacity:1;
+}
+
+/* example square 8 */
+#square-8{
+background: #8CBED9;
+content:url('https://cdn.glitch.com/397251fb-38dd-4634-b488-2daac3af279b%2Fduckprint1.png?v=1571792921691');
+opacity:0;
+}
+#square-8:active {
+ content:url('https://cdn.glitch.com/397251fb-38dd-4634-b488-2daac3af279b%2Fduckprint1.png?v=1571792921691');
+  width:100%;
+  opacity:1;
+}
+
+/* example square 9 */
+#square-9{
+background: #8CBED9;
+content:url('https://cdn.glitch.com/397251fb-38dd-4634-b488-2daac3af279b%2Fdisguise.png?v=1571792928502');
+opacity:0;
+}
+#square-9:active {
+ content:url('https://cdn.glitch.com/397251fb-38dd-4634-b488-2daac3af279b%2Fdisguise.png?v=1571792928502');
+  width:100%;
+  opacity:1;
+}
+
+/* example square 10 */
+#square-10{
+background: #8CBED9;
+content:url('https://cdn.glitch.com/397251fb-38dd-4634-b488-2daac3af279b%2Fquack2.png?v=1571792921002');
+opacity:0;
+}
+#square-10:active {
+ content:url('https://cdn.glitch.com/397251fb-38dd-4634-b488-2daac3af279b%2Fquack2.png?v=1571792921002');
+  width:100%;
+  opacity:1;
+}
+
+/* example square 11 */
+#square-11{
+background: #8CBED9;
+content:url('https://cdn.glitch.com/397251fb-38dd-4634-b488-2daac3af279b%2Fduck2.png?v=1571792926438');
+opacity:0;
+}
+#square-11:active {
+ content:url('https://cdn.glitch.com/397251fb-38dd-4634-b488-2daac3af279b%2Fduck2.png?v=1571792926438');
+  width:100%;
+  opacity:1;
+}
+
+/* example square 12 */
+#square-12{
+background: #8CBED9;
+content:url('https://cdn.glitch.com/397251fb-38dd-4634-b488-2daac3af279b%2Fripple1.png?v=1571792921301');
+opacity:0;
+}
+#square-12:active {
+ content:url('https://cdn.glitch.com/397251fb-38dd-4634-b488-2daac3af279b%2Fripple1.png?v=1571792921301');
+  width:100%;
+  opacity:1;
+}
+
+/* example square 13 */
+#square-13{
+background: #8CBED9;
+content:url('https://cdn.glitch.com/397251fb-38dd-4634-b488-2daac3af279b%2Fduckprint2.png?v=1571792921661');
+opacity:0;
+}
+#square-13:active {
+ content:url('https://cdn.glitch.com/397251fb-38dd-4634-b488-2daac3af279b%2Fduckprint2.png?v=1571792921661');
+  width:100%;
+  opacity:1;
+}
+
+/* example square 14 */
+#square-14{
+background: #8CBED9;
+content:url('https://cdn.glitch.com/397251fb-38dd-4634-b488-2daac3af279b%2Ffoundme.png?v=1571792926428');
+opacity:0;
+}
+#square-14:active {
+ content:url('https://cdn.glitch.com/397251fb-38dd-4634-b488-2daac3af279b%2Ffoundme.png?v=1571792926428');
+  width:100%;
+  opacity:1;
+}
+
+/* example square 15 */
+#square-15{
+background: #8CBED9;
+content:url('https://cdn.glitch.com/397251fb-38dd-4634-b488-2daac3af279b%2Fduck3.png?v=1571792919145');
+opacity:0;
+}
+#square-15:active {
+ content:url('https://cdn.glitch.com/397251fb-38dd-4634-b488-2daac3af279b%2Fduck3.png?v=1571792919145');
+  width:100%;
+  opacity:1;
+}

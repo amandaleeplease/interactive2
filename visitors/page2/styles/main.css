@@ -1,0 +1,15 @@
+#street {
+  width:500px;
+  position:absolute;
+  top:-25px;
+  left:-75px;
+}
+
+#clipper {
+  width:450px;
+  height:300px;
+  overflow:hidden;
+  position:absolute;
+  right:0;
+  
+}
