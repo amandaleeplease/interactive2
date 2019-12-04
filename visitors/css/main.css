@@ -1,8 +1,8 @@
 #headline img {
-  width:40%;
+  width:30%;
   position:absolute;
- top: 15vh;
- left: 30vw;
+ top: 18vh;
+ left: 35vw;
 }
 
 #artist img {
@@ -12,21 +12,29 @@
  left: 39vw;
 }
 
-#house img {
+/*#house img {
   width:50%;
   position:absolute;
   top: 45vh;
  left: 24vw;
-}
-
+}*/
+/*
 #click img {
  width: 10%;
  position: absolute;
  top: 85vh;
  left: 45vw;
-}
+}*/
 
 body {
-background: #EBE8DB;
+background: #FFFCF0;
  }
 
+
+#rokeby img{
+width:60%;
+  position:absolute;
+  top: 28vh;
+ left: 20vw;
+ opacity: 0.5;
+}

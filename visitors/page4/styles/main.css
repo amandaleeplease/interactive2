@@ -1,19 +1,19 @@
 #headline img {
-  width:12%;
+  width:8%;
   position:absolute;
- top: 4vh;
- left: 3vw;
-}
-
-#tagline img {
-  width: 18%;
-  position:absolute;
-  top: 9vh;
+ top: 3vh;
  left: 2vw;
 }
 
+#tagline img {
+  width: 14%;
+  position:absolute;
+  top: 6vh;
+ left: 1.2vw;
+}
+
 body {
-background: #EBE8DB;
+background: #FFFCF0;
   perspective:2200px;
  }
 

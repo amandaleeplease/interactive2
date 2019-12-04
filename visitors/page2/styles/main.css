@@ -1,15 +1,15 @@
 #headline img {
-  width:12%;
+  width:8%;
   position:absolute;
- top: 4vh;
- left: 3vw;
+ top: 3vh;
+ left: 2vw;
 }
 
 #tagline img {
-  width: 18%;
+  width: 14%;
   position:absolute;
-  top: 9vh;
- left: 2vw;
+  top: 6vh;
+ left: 1.2vw;
 }
 
 #landing img {
@@ -20,7 +20,7 @@
 }
 
 body {
-background: #EBE8DB;
+background: #FFFCF0;
  }
 
 #house img {
@@ -32,8 +32,13 @@ background: #EBE8DB;
 #room1 img {
   width:12%;
   position:absolute;
-  top: 52vh;
+  top: 51.8vh;
  left: 43.5vw;
+ opacity: .5;
+}
+
+#room1:hover {
+  opacity: 0;
 }
 
 #room2 img {
@@ -41,6 +46,11 @@ background: #EBE8DB;
   position:absolute;
   top: 63.7vh;
  left: 52.6vw;
+ opacity: .5;
+}
+
+#room2:hover {
+  opacity: 0;
 }
 
 #room3 img {
@@ -48,19 +58,24 @@ background: #EBE8DB;
   position:absolute;
   top: 64vh;
  left: 33.2vw;
+ opacity: .5;
+}
+
+#room3:hover {
+  opacity: 0;
 }
 
 #rokeby img {
-  width:35%;
+  width:30%;
   position:absolute;
- top: 15vh;
- left: 32vw;
+ top: 22vh;
+ left: 35vw;
 }
 
 #lines img {
   width:100%;
   position:absolute;
- top: -8vh;
+ top: -4vh;
  left: 0vw;
 }
 
@@ -74,20 +89,20 @@ background: #EBE8DB;
 #accordion img {
   width:20%;
   position:absolute;
-  top: 50.2vh;
+  top: 54.2vh;
  left: 80vw;
 }
 
 #cello img {
   width:20%;
   position:absolute;
-  top: 30.7vh;
+  top: 34.7vh;
  left: 42vw;
 }
 
 #piano img {
   width:20%;
   position:absolute;
-  top: 50vh;
+  top: 54vh;
  left: 10vw;
 }
