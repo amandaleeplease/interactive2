@@ -30,37 +30,42 @@ background: #FFFCF0;
   top:-25px;
   left:-75px;
   opacity: .4;
+  transition: opacity 200ms ease;
+}
+
+#clipper:hover #sepia {
+  opacity: 0.2;
 }
 
 #clipper{
-  width:900px;
-  height:450px;
+  width:850px;
+  height:500px;
   overflow:hidden;
   position:absolute;
-  top:24vh;
-  left:20vw;
-  transform:rotate3d(0,0.5,0,-45deg);
+  top:26vh;
+  left:30vw;
+  transform:rotate3d(0,0.5,0,35deg);
 }
 
 #name img {
   width: 28%;
   position:absolute;
-  top: 80vh;
- left: 60vw;
+  top: 35vh;
+ left: 10vw;
 }
 
 #instrument img {
   width: 33%;
   position:absolute;
-  top: 9vh;
- left: 27vw;
+  top: 20vh;
+ left: 20vw;
 }
 
 #location img {
   width: 18%;
   position:absolute;
-  top: 13vh;
- left: 39vw;
+  top: 41vh;
+ left: 20.7vw;
 }
 
 #bottom img {

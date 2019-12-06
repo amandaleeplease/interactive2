@@ -1,6 +1,16 @@
-
 let hoverables = document.querySelectorAll('.hoverable')
 
+let sepia = document.querySelector('#sepia')
+let audio = document.querySelector('#music')
+
+
+sepia.addEventListener('click',function(){
+  if(audio.paused){
+    audio.play()
+  } else {
+    audio.pause()
+  }
+})
 
 document.addEventListener('mousemove',function(event){
   
@@ -28,6 +38,6 @@ document.addEventListener('mousemove',function(event){
   
   
   hoverables[0].style.transform = "rotate("+angle+"rad) translateX("+dist+"px) rotate(-"+angle+"rad)"
-  
+  sepia.style.transform = "rotate("+angle+"rad) translateX("+dist+"px) rotate(-"+angle+"rad)"
   
 })

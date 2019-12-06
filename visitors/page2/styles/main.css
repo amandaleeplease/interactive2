@@ -34,11 +34,11 @@ background: #FFFCF0;
   position:absolute;
   top: 51.8vh;
  left: 43.5vw;
- opacity: .5;
+ opacity: 0;
 }
 
-#room1:hover {
-  opacity: 0;
+#room1:hover img {
+  opacity: 0.5;
 }
 
 #room2 img {
@@ -46,23 +46,24 @@ background: #FFFCF0;
   position:absolute;
   top: 63.7vh;
  left: 52.6vw;
- opacity: .5;
+ opacity: 0;
 }
 
-#room2:hover {
-  opacity: 0;
+#room2:hover img {
+  opacity: 0.5;
 }
+
 
 #room3 img {
   width:13.5%;
   position:absolute;
   top: 64vh;
  left: 33.2vw;
- opacity: .5;
+ opacity: 0;
 }
 
-#room3:hover {
-  opacity: 0;
+#room3:hover img {
+  opacity: 0.5;
 }
 
 #rokeby img {

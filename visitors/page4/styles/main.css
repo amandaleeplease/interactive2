@@ -30,6 +30,11 @@ background: #FFFCF0;
   top:-25px;
   left:-75px;
   opacity: .4;
+  transition: opacity 200ms ease;
+}
+
+#clipper:hover #sepia {
+  opacity: 0.2;
 }
 
 #clipper {
@@ -45,22 +50,22 @@ background: #FFFCF0;
 #name img {
   width: 28%;
   position:absolute;
-  top: 80vh;
- left: 60vw;
+  top: 36vh;
+ left: 3.4vw;
 }
 
 #instrument img {
   width: 33%;
   position:absolute;
-  top: 9vh;
- left: 27vw;
+  top: 22.5vh;
+ left: 7vw;
 }
 
 #location img {
   width: 18%;
   position:absolute;
-  top: 14vh;
- left: 47.5vw;
+  top: 42vh;
+ left: 19.2vw;
 }
 
 
@@ -77,3 +82,12 @@ background: #FFFCF0;
   top: 80.5vh;
  left: 1vw;
 }
+
+
+#line img {
+  width: 2%;
+  position:absolute;
+  top: 1vh;
+ left: 1vw;
+}
+

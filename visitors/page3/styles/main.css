@@ -18,20 +18,24 @@ background: #FFFCF0;
  }
 
  #cello {
-  width:900px;
+  width:1000px;
   position:absolute;
   top:-25px;
   left:-75px;
 }
 
 #sepia {
-  width:900px;
+  width:1000px;
   position:absolute;
   top:-25px;
   left:-75px;
   opacity: .4;
+  transition: opacity 200ms ease;
 }
 
+#clipper:hover #sepia {
+  opacity: 0.2;
+}
 #clipper {
   width:850px;
   height:500px;
@@ -39,28 +43,28 @@ background: #FFFCF0;
   position:absolute;
   top:27vh;
   left:27vw;
-   transform:rotate3d(0,0.5,0,35deg);
+   transform:rotate3d(0,0.5,0,25deg);
 }
 
 #name img {
   width: 28%;
   position:absolute;
-  top: 80vh;
- left: 60vw;
+  top:35vh;
+ left: 8.9vw;
 }
 
 #instrument img {
   width: 33%;
   position:absolute;
-  top: 9vh;
- left: 27vw;
+  top: 22.4vh;
+ left: 15vw;
 }
 
 #location img {
   width: 18%;
   position:absolute;
-  top: 13vh;
- left: 39vw;
+  top: 41vh;
+ left:12.5vw;
 }
 
 
@@ -76,4 +80,11 @@ background: #FFFCF0;
   position:absolute;
   top: 80.5vh;
  left: 1vw;
+}
+
+#line img {
+  width: 6%;
+  position:absolute;
+  top: -5vh;
+ left: 70.2vw;
 }

@@ -38,3 +38,33 @@ width:60%;
  left: 20vw;
  opacity: 0.5;
 }
+
+#tablet,
+#mobile,
+#print {
+    display: none;
+
+    }
+
+    /* mobile */
+@media (max-width: 670px) {
+	img { width: 80%;
+		position: absolute;
+	left: 11vw; 
+    top: 60vh;
+    
+}
+    body { background: #EBE8DB;
+
+   
+    }
+    #mobile {
+        display: inline;
+        color: black;
+    }
+    #desktop,
+    #tablet,
+    #print {
+        display: none;
+    }
+}
